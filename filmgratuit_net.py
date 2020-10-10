@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # vStream https://github.com/Kodi-vStream/venom-xbmc-addons
-# 4
+# source 04 # remise a jour 08102020
 
 import re
 import requests
@@ -17,9 +17,9 @@ from resources.lib.util import Unquote
 
 UA = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0'
 
-#[COLOR coral]%s[/COLOR]
+
 SITE_IDENTIFIER = 'filmgratuit_net'
-SITE_NAME = '[COLOR violet]Filmgratuit net[/COLOR]'
+SITE_NAME = 'Filmgratuit'
 SITE_DESC = 'Films,Séries'
 
 URL_MAIN = 'https://wvw.filmgratuit.net/'
@@ -765,10 +765,6 @@ def hostersLink():
     oRequestHandler.request()
     sHosterUrl = oRequestHandler.getRealUrl()
    
-    VSlog('############## Movie = ' +       sMovieTitle )
-    VSlog('############## refere = ' +      sUrlref )
-    VSlog('############## Requete= '+       sUrl)
-    VSlog('############## sHosterUrl = '+   sHosterUrl)
     #sHosterUrl='https://uptostream.com/iframe/cawvv8v9rwo1'
     
     oHoster = cHosterGui().checkHoster(sHosterUrl) 
